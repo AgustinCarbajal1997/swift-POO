@@ -7,7 +7,7 @@
 
 import Foundation
 
-class automovil {
+class Automovil {
     var color = "neutro"
     var numeroLLantas = 4
     var precio = 0
