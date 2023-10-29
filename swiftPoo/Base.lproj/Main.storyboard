@@ -68,7 +68,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="TKx-fa-2ZE"/>
                     <connections>
-                        <segue destination="r2V-TR-Ys9" kind="show" id="Jny-Xc-vnA"/>
+                        <segue destination="r2V-TR-Ys9" kind="show" identifier="detailView" id="Jny-Xc-vnA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

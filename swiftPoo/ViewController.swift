@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var tipoAutomovil: Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -18,9 +20,13 @@ class ViewController: UIViewController {
 
 
     @IBAction func crearAutomovilSencillo(_ sender: Any) {
+        tipoAutomovil = 0
+        performSegue(withIdentifier: "detailView", sender: self)
     }
     
     @IBAction func crearAutomovilMazda(_ sender: Any) {
+        tipoAutomovil = 1
+        performSegue(withIdentifier: "detailView", sender: self)
     }
     
 }
