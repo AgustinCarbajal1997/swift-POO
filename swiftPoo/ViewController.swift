@@ -17,5 +17,11 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func crearAutomovilSencillo(_ sender: Any) {
+    }
+    
+    @IBAction func crearAutomovilMazda(_ sender: Any) {
+    }
+    
 }
 

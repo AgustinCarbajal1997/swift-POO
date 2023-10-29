@@ -42,11 +42,17 @@
                                 <rect key="frame" x="93.666666666666686" y="185.33333333333334" width="206" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Crear automovil sencillo"/>
+                                <connections>
+                                    <action selector="crearAutomovilSencillo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bZU-mC-5Uh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzG-kL-b4h">
                                 <rect key="frame" x="96.666666666666686" y="260.33333333333331" width="200" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Crear automovil Mazda"/>
+                                <connections>
+                                    <action selector="crearAutomovilMazda:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fgg-W4-wJg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -69,10 +75,10 @@
             </objects>
             <point key="canvasLocation" x="13" y="-27"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Segunda Pantalla View Controller-->
         <scene sceneID="grF-VK-GwJ">
             <objects>
-                <viewController id="r2V-TR-Ys9" sceneMemberID="viewController">
+                <viewController id="r2V-TR-Ys9" customClass="ViewControllerSegundaPantallaViewController" customModule="swiftPoo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ttq-ox-miW">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,16 +94,25 @@
                                 <rect key="frame" x="148" y="339" width="97" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Encender"/>
+                                <connections>
+                                    <action selector="encender:" destination="r2V-TR-Ys9" eventType="touchUpInside" id="Ais-4x-XJc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dsw-Qe-U2A">
                                 <rect key="frame" x="157" y="394" width="79" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Apagar"/>
+                                <connections>
+                                    <action selector="apagar:" destination="r2V-TR-Ys9" eventType="touchUpInside" id="EJ6-zR-deU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5J-J8-EtQ">
                                 <rect key="frame" x="152.66666666666666" y="449" width="88" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Acelerar"/>
+                                <connections>
+                                    <action selector="acelerar:" destination="r2V-TR-Ys9" eventType="touchUpInside" id="GVo-Ym-bo4"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informacion del carro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lg-hK-Qaw">
                                 <rect key="frame" x="115.66666666666669" y="554" width="162" height="21"/>
@@ -122,6 +137,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bpK-AR-XlT"/>
+                    <connections>
+                        <outlet property="imageView" destination="gUd-MO-x7i" id="8se-zX-stJ"/>
+                        <outlet property="labelView" destination="9lg-hK-Qaw" id="67d-6i-WK7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nih-tG-ZQh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
