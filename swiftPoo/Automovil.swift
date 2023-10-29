@@ -6,3 +6,17 @@
 //
 
 import Foundation
+
+class automovil {
+    var color = "neutro"
+    var numeroLLantas = 4
+    var precio = 0
+    
+    func encender() -> Bool{
+        return true
+    }
+    
+    func apagar() -> Bool{
+        return false
+    }
+}
