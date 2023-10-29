@@ -14,7 +14,6 @@ class ViewController: UIViewController {
         
         let automovil = Automovil()
         
-        print("Representa \(automovil.encender())")
     }
 
 
