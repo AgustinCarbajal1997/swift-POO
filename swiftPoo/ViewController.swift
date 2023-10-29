@@ -29,5 +29,12 @@ class ViewController: UIViewController {
         performSegue(withIdentifier: "detailView", sender: self)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let destino = segue.destination as? ViewControllerSegundaPantallaViewController{
+            destino.tipoAutomovil = self.tipoAutomovil
+        }
+    }
+    
 }
 
