@@ -10,10 +10,14 @@ import Foundation
 class Automovil {
     var color = "neutro"
     var numeroLLantas = 4
-    var precio = 0
+    var precio = 5000
     
     func encender() -> Bool{
         return true
+    }
+    
+    func acelerar() -> String{
+        return "Aceleracion exitosa"
     }
     
     func apagar() -> Bool{

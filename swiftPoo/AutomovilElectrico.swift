@@ -1,8 +1,10 @@
-//
-//  AutomovilElectrico.swift
-//  swiftPoo
-//
-//  Created by Agustin Carbajal on 30/10/2023.
-//
-
 import Foundation
+
+class AutomovilElectrico: Automovil {
+    var porcentajeBateria = 100
+    
+    func cargarBateria() -> String{
+        porcentajeBateria = 100
+        return "Carga exitosa"
+    }
+}
