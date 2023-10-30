@@ -16,9 +16,11 @@ class ViewControllerSegundaPantallaViewController: UIViewController {
         switch tipoAutomovil {
         case 0:
             automovilNormal = Automovil()
+            imageView.image = UIImage(named: "automovil")
             labelView.text = "Informacion: Se creo automovil sencillo"
         case 1:
             automovilElectrico = AutomovilElectrico()
+            imageView.image = UIImage(named: "ferrari")
             labelView.text = "Informacion: Se creo automovil electrico"
         default:
             print("Error")
