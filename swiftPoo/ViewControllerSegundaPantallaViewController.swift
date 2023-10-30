@@ -12,6 +12,7 @@ class ViewControllerSegundaPantallaViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("Se ejecuta el siguiente ciclo de vida 2 \(#function)")
 
         switch tipoAutomovil {
         case 0:
