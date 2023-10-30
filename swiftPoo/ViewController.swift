@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print("Se ejecuta el siguiente ciclo de vida \(#function)")
         let automovil = Automovil()
         
     }
