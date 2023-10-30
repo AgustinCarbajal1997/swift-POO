@@ -17,6 +17,26 @@ class ViewController: UIViewController {
         let automovil = Automovil()
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("Se ejecuta el siguiente ciclo de vida \(#function)")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("Se ejecuta el siguiente ciclo de vida \(#function)")
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        print("Se ejecuta el siguiente ciclo de vida \(#function)")
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        print("Se ejecuta el siguiente ciclo de vida \(#function)")
+    }
 
 
     @IBAction func crearAutomovilSencillo(_ sender: Any) {
