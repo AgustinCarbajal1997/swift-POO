@@ -11,10 +11,11 @@ class ViewController: UIViewController {
 
     var tipoAutomovil: Int?
     
+    //CICLO DE VIDA DE SCREENS
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Se ejecuta el siguiente ciclo de vida \(#function)")
-        let automovil = Automovil()
+        _ = Automovil()
         
     }
     
@@ -37,6 +38,9 @@ class ViewController: UIViewController {
         super.viewDidDisappear(animated)
         print("Se ejecuta el siguiente ciclo de vida \(#function)")
     }
+    //CICLO DE VIDA DE SCREENS
+    
+    //CICLO DE VIDA DE APP
 
 
     @IBAction func crearAutomovilSencillo(_ sender: Any) {
